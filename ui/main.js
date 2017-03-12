@@ -1,5 +1,3 @@
-
-
 //submit name
 var submit = document.getElementById('submit_btn');
 submit.onclick = function(){
@@ -10,7 +8,7 @@ submit.onclick = function(){
    // capture the response and store it in a variable
    
    request.onreadystatechange = function () {
-     if(req.readyState === XMLHttprequest.DONE){
+     if(request.readyState === XMLHttprequest.DONE){
          // Take some action
          if(request.status === 200){
              alert('Logged in Successfully');
